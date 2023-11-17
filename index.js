@@ -30,6 +30,7 @@ const questions = [
    type: "input",
    name: "credits",
    message: "List your collaborators, if any, with links to their GitHub profiles.",
+   default: "",
 },
 {
     type: "list",
@@ -43,23 +44,15 @@ const questions = [
     message: "If your project has a lot of features, list them here.",
 },
 {
-    type: "input",
-    name: "how to contribute",
-    message: "If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.",
-},
-{
+ 
     type: "input",
     name: "Tests",
     message:"Go the extra mile and write tests for your application. Then provide examples on how to run them here."
 },
+
 {
     type:"input",
-    name: "questions",
-    message: "what do I do if I have an issue?",
-},
-{
-    type:"input",
-    name: "username",
+    name: "creator",
     message: "Please enter your GitHub username:",
 },
 {
@@ -79,7 +72,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((responses) => {
         console.log("Creating Professional README.md File...");
-        writeToFile("./Develop/README.md", generateMarkdown({...responses}));
+        writeToFile("./utils/README.md", generateMarkdown({...responses}));
     });
 }
 
