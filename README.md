@@ -5,7 +5,7 @@
   ## Installation
   To run this project it will require Markdown, JavaScript, Noode, JSON
   ## Usage
-  Install node js first, then install inquirer 8.2.4, then run node index.js in the terminal. The projest will gice a list of questions to answer that at the end wil produce a professional README.md to use in your next project.)
+  Install node js first, then install inquirer 8.2.4, then run node index.js in the terminal. The projest will gice a list of questions to answer that at the end wil produce a professional README.md to use in your next project. https://drive.google.com/file/d/1qhb175TuCxWrK5QFWRr-8iobXMFC7EB9/view
   ## Table of Contents
   * [Features](#features)
   * [Credits](#credits)
