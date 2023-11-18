@@ -37,7 +37,7 @@ function generateMarkdown(data) {
   ## Testing
   ${data.test}
   ## Questions
-  Please send your questions [here](mailto:${data.email}?subject=[GitHub]%20Dev%20Connect) or visit (https://github.com/${data.creator}).
+  Please send your questions (${data.email}) or visit (https://github.com/${data.creator}).
 
 `;
 }
