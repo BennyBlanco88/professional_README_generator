@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "none") {
-    return `{license}`;
+    return `${license}`;
   }
   return "";
 }
