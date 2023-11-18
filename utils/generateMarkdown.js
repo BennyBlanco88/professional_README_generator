@@ -19,13 +19,13 @@ function renderLicenseBadge(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
-  ##Description
+  ## Description
   ${data.description}
   ## Installation
   ${data.installation}
-  ##Usage
+  ## Usage
   ![alt-text](${data.usage})
-  ##Table of Contents
+  ## Table of Contents
   *[Features](#features)
   *[Credits](#credits)
   *[Testing](#testing)
@@ -34,9 +34,9 @@ function generateMarkdown(data) {
   ${data.features}
   ## Credits
   ${data.credits}
-  ##Testing
+  ## Testing
   ${data.test}
-  ##Questions
+  ## Questions
   Please send your questions [here](mailto:${data.email}?subject=[GitHub]%20Dev%20Connect) or visit [github/${data.creator}](https://github.com/${data.creator}).
 
 `;
