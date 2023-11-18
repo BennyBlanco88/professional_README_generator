@@ -13,13 +13,13 @@ const questions = [
 {
     type: "input",
     name: "description",
-    message: "Provide a short description explaining the what, why, and how of your project.",
+    message: "Provide a short description explaining your project.",
 },
 
 {
     type: "input",
     name: "installation",
-    message: "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.",
+    message: "What are the steps required to install your project? 
 },
 {
     type: "input",
@@ -47,7 +47,7 @@ const questions = [
  
     type: "input",
     name: "test",
-    message:"Go the extra mile and write tests for your application. Then provide examples on how to run them here."
+    message:"Provide walkthrough of required tests if applicable.",
 },
 
 {
