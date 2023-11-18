@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "none") {
-    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+    return `{license}`;
   }
   return "";
 }
@@ -26,10 +26,10 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage})
   ## Table of Contents
-  *[Features](#features)
-  *[Credits](#credits)
-  *[Testing](#testing)
-  *[Questions](#questions)
+  * [Features](#features)
+  * [Credits](#credits)
+  * [Testing](#testing)
+  * [Questions](#questions)
   ## Features
   ${data.features}
   ## Credits
@@ -37,7 +37,7 @@ function generateMarkdown(data) {
   ## Testing
   ${data.test}
   ## Questions
-  Please send your questions [here](mailto:${data.email}?subject=[GitHub]%20Dev%20Connect) or visit [github/${data.creator}](https://github.com/${data.creator}).
+  Please send your questions [here](mailto:${data.email}?subject=[GitHub]%20Dev%20Connect) or visit (https://github.com/${data.creator}).
 
 `;
 }
