@@ -2,7 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
-const generateMarkdown = require("./Develop./utils/generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown")
 // TODO: Create an array of questions for user input
 const questions = [
 {
@@ -19,7 +19,7 @@ const questions = [
 {
     type: "input",
     name: "installation",
-    message: "What are the steps required to install your project? 
+    message: "What are the steps required to install your project?",
 },
 {
     type: "input",
@@ -49,7 +49,6 @@ const questions = [
     name: "test",
     message:"Provide walkthrough of required tests if applicable.",
 },
-
 {
     type:"input",
     name: "creator",
@@ -72,7 +71,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((responses) => {
         console.log("Creating Professional README.md File...");
-        writeToFile("./Develop./utils/README.md", generateMarkdown({...responses}));
+        writeToFile("./utils/README.md", generateMarkdown({...responses}));
     });
 }
 

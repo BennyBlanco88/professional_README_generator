@@ -24,7 +24,7 @@ function generateMarkdown(data) {
   ## Installation
   ${data.installation}
   ## Usage
-  ![alt-text](${data.usage})
+  ${data.usage})
   ## Table of Contents
   *[Features](#features)
   *[Credits](#credits)
