@@ -22,7 +22,7 @@ function generateMarkdown(data) {
   ##Description
   ${data.description}
   ## Installation
-  ${data.installaton}
+  ${data.installation}
   ##Usage
   ![alt-text](${data.usage})
   ##Table of Contents
